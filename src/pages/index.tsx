@@ -21,4 +21,4 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
   return <div>안녕</div>;
-}
+} // 안녕
