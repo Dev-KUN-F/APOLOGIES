@@ -1,0 +1,28 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black; /* 검정 배경 */
+}
+
+.loading-line {
+  width: 2px; /* 얇은 수직선 */
+  height: 100vh; /* 전체 높이 */
+  background-color: white; /* 흰색 수직선 */
+  position: absolute;
+  top: 0;
+  animation: drop 2s infinite;
+}
+
+@keyframes drop {
+  0% {
+    top: -100vh;
+  }
+  50% {
+    top: 0;
+  }
+  100% {
+    top: 100vh;
+  }
+}
