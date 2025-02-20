@@ -15,7 +15,7 @@ export default function Home() {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); // 5초 후 로딩 종료
+    }, 2000); // 5초 후 로딩 종료
 
     return () => {
       clearTimeout(timer);
