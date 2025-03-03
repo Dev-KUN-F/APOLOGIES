@@ -20,11 +20,25 @@
   }
 }
 
+@keyframes slideDownFromMiddle {
+  0% {
+    transform: translateY(-50vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
 .main-container {
   position: relative;
   height: 100vh;
   overflow: hidden;
   background-color: #171717;
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
 }
 
 .overlay {
@@ -34,7 +48,7 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  z-index: 2;
+  z-index: 0;
 }
 
 .rectangle {
@@ -64,6 +78,9 @@
 }
 
 .content {
-  position: relative;
-  z-index: 1;
+  color: white;
+}
+
+.mainbanner {
+  width: 50%;
 }

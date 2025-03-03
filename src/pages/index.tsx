@@ -15,7 +15,7 @@ export default function Home() {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 5초 후 로딩 종료
+    }, 5000); // 5초 후 로딩 종료
 
     return () => {
       clearTimeout(timer);
@@ -33,7 +33,8 @@ export default function Home() {
           <div className="rectangle rectangle1"></div>
           <div className="rectangle rectangle2"></div>
           <div className="rectangle rectangle3"></div>
-          <div className="content fade-in">안녕</div>
+          <img className="mainbanner" src="/image1.jpg" alt="Main Banner" />
+          <div className="content">안녕</div>
         </div>
       )}
     </div>
